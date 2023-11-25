@@ -41,7 +41,7 @@ jobs:
     steps:
       - uses: actions/upload-artifact@v3
         with:
-        name: drupal-artifcat
-        path: ./
+          name: drupal-artifcat
+          path: ./
 
   

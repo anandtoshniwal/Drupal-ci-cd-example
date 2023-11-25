@@ -2,7 +2,6 @@
 <ruleset name="qed42">
   <description>QED42 PHPCS</description>
   <file>web/modules/custom</file>
-  <file>web/themes/custom</file>
   <arg name="extensions" value="php,module,inc,install,profile,theme,info,txt,yml"/>
   <rule ref="Drupal">
     <!-- kill frivolous comments. -->

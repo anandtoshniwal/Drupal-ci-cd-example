@@ -39,3 +39,19 @@ node_modules
 /phpunit.xml
 /.phpunit.result.cache
 /clover.xml
+
+
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# Ignore local settings overrides.
+/web/sites/*/*.local.*
+
+# Ignore Drupal's file directory
+/web/sites/*/files/
+
+# Ignore SimpleTest multi-site environment.
+/web/sites/simpletest
