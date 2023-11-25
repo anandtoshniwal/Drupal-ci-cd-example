@@ -48,6 +48,18 @@ jobs:
       - lint
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ env.PHP_VERSION }}
+          extensions: ${{ env.PHP_EXTENSIONS }}
+          coverage: none
+          tools: composer:v2
+      - name: Get composer cache directory
+        id: composercache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+      - name: Install dependencies
+        run: composer install --no-progress --prefer-dist
       - uses: actions/upload-artifact@v3
         with:
           name: drupal-artifcat
