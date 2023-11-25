@@ -2,5 +2,4 @@ name: Trial
 type: module
 description: 'Trial desc'
 package: Custom
-version: VERSION
-
+core_version_requirement: ^9.2 || ^10
