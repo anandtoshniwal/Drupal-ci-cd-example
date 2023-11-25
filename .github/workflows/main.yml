@@ -17,6 +17,9 @@ env:
 jobs:
   lint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
     steps:
       - uses: actions/checkout@v3
       - uses: shivammathur/setup-php@v2
@@ -38,10 +41,14 @@ jobs:
     needs:
       - lint
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
     steps:
       - uses: actions/upload-artifact@v3
         with:
           name: drupal-artifcat
           path: ./
+          if-no-files-found: error
 
   
