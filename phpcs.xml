@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="qed42">
   <description>QED42 PHPCS</description>
-  <file>src</file>
   <file>docroot/modules/custom</file>
   <file>docroot/themes/custom</file>
   <arg name="extensions" value="php,module,inc,install,profile,theme,info,txt,yml"/>
