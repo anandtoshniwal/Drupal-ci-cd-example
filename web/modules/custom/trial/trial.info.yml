@@ -1,0 +1,6 @@
+name: Trial
+type: module
+description: 'Trial desc'
+package: Custom
+version: VERSION
+
