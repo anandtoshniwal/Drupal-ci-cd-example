@@ -38,9 +38,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/upload-artifact@v3
-      with:
-        name: drupal-artifcat
-        path: ./
+        with:
+          name: drupal-artifcat
+          path: ./
 
   
   
