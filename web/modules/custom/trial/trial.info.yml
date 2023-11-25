@@ -1,5 +1,5 @@
 name: Trial
 type: module
-description: 'Trial s'
+description: 'Trial description1'
 package: Custom
 core_version_requirement: ^9.2 || ^10
