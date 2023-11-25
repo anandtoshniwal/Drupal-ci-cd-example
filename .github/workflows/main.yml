@@ -35,12 +35,13 @@ jobs:
         run: php vendor/bin/phpstan analyze
 
   build:
+    needs:
+      - lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/upload-artifact@v3
         with:
-          name: drupal-artifcat
-          path: ./
+        name: drupal-artifcat
+        path: ./
 
-  
   
