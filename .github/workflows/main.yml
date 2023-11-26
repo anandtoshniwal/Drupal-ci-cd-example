@@ -71,6 +71,6 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: drupal-artifcat
-          path: drupal-artifacet.zip
+          path: drupal-artifcat.zip
 
   
