@@ -66,9 +66,11 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
       - name: Install dependencies
         run: composer install --no-progress --prefer-dist
+      - name: Zip artifact for deployment
+        run: zip  drupal-artifcat.zip ./* -r
       - uses: actions/upload-artifact@v3
         with:
           name: drupal-artifcat
-          path: ./
+          path: drupal-artifacet.zip
 
   
